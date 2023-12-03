@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title>Retro Games - Página Inicial</title>
+    <link rel="icon" href="favicon-control.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="./style/style.css" />
+  </head>
+  <body>
+    <span class="navbar-toggler-icon"></span>
+    <div class="menu-icon" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="downloads.html">Roms</a></li>
+      <li><a href="emuladores.html">Emuladores</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+
+    <header>
+      <div class="svg-container">
+        <figure class="gif">
+          <img src="./assets/mario.gif" alt="Mario" />
+        </figure>
+        <h1>Retro Games</h1>
+        <h3>Divirta-se à vontade</h3>
+      </div>
+      <div class="search-box">
+        <form>
+          <label for="searchInput">Pesquise seu jogo:</label>
+          <input
+            type="text"
+            id="searchInput"
+            class="search-input"
+            placeholder="Nome do jogo"
+          />
+          <br />
+          <button class="search-button" onclick="searchImage(); return false;">
+            Pesquisar
+          </button>
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <p>
+        Bem-vindo ao Retro Games! Aqui você encontrará uma ampla seleção de ROMs
+        de jogos clássicos para vários consoles retrô.
+      </p>
+      <p>
+        Reviva a nostalgia e a diversão dos jogos antigos baixando suas ROMs
+        favoritas. Temos jogos para consoles como Nintendo, Super Nintendo, Sega
+        Genesis e muitos outros.
+      </p>
+      <p>
+        Para começar, basta navegar pela nossa coleção e escolher as ROMs que
+        deseja baixar. Em seguida, você poderá usar emuladores compatíveis para
+        jogar esses jogos em seu computador ou dispositivo móvel.
+      </p>
+
+      <div class="game-container">
+        <div class="game">
+          <img
+            class="game-image"
+            src="./assets/Nintendo_64_Logo.svg.png"
+            alt="Nintendo 64"
+            onclick="showInfo('Nintendo 64')"
+          />
+          <h3>Nintendo 64</h3>
+        </div>
+        <div class="game">
+          <img
+            class="game-image"
+            src="/assets/Neo_Geo_logo.png"
+            alt="Neo Geo"
+            onclick="showInfo('Neo Geo')"
+          />
+          <h3>Neo Geo</h3>
+        </div>
+        <div class="game">
+          <img
+            class="game-image"
+            src="./assets/ps1-playstation-1-256.png"
+            alt="PlayStation"
+            onclick="showInfo('PlayStation')"
+          />
+          <h3>PlayStation</h3>
+        </div>
+        <div class="game">
+          <img
+            class="game-image"
+            src="./assets/PCSX2-icon.png"
+            alt="PlayStation 2"
+            onclick="showInfo('PlayStation 2')"
+          />
+          <h3>PlayStation 2</h3>
+        </div>
+      </div>
+      <div id="icon-info"></div>
+    </main>
+
+    <footer>
+      <p>Emuladores e ROMs</p>
+      <small>Retro Games &copy; 2023</small>
+    </footer>
+
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+      <div class="modal-content">
+        <a id="modalLink" href="#">
+          <span class="close-button" onclick="closeModal()">&#10006;</span>
+          <img id="modalImage" class="modal-img" src="" alt="Imagem do Modal" />
+        </a>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
