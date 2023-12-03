@@ -1,6 +1,7 @@
 function searchImage() {
   var searchTerm = document.getElementById("searchInput").value.toLowerCase()
   var imageMap = {
+
     /*  NEO GEO */
     "fatal fury": {
       image: "./assets/fatal fury.png",
@@ -14,6 +15,8 @@ function searchImage() {
       image: "./assets/samurai shodown.png",
       link: "https://exemplo.com/link3",
     },
+
+
     /*  PS1 */
     "Crash Bandicoot": {
       image: "./assets/crash.jpeg",
@@ -38,7 +41,7 @@ function searchImage() {
     },
 
     "Mortal Kombat armagedon": {
-      image: "./assets/armagedon.jpg",
+      image: "./assets/mortal kombat armagedon.jpg",
       link: "https://exemplo.com/link5",
     },
 
