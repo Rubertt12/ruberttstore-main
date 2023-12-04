@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="/style/style.css" media="screen" />
-  <meta charset="utf-8">
-  <title>Retro Games</title>
-  <link rel="icon" href="/assets/favicon-control.png" type="image/x-icon">
-
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title>Retro Games - Página Inicial</title>
+    <link rel="icon" href="/assets/favicon-control.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="./style/style.css" />
 </head>
 <body>
-  <span class="navbar-toggler-icon"></span>
+<body>
+    <span class="navbar-toggler-icon"></span>
     <div class="menu-icon" onclick="toggleMenu()">
       <div class="bar"></div>
       <div class="bar"></div>
       <div class="bar"></div>
     </div>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="downloads.html">Roms</a></li>
-    <li><a href="emuladores.html">Emuladores</a></li>
-    <li><a href="contato.html">Contato</a></li>
-  </ul>
 
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="downloads.html">Roms</a></li>
+      <li><a href="emuladores.html">Emuladores</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
   <header>
    
        <figure class="gif">
@@ -169,6 +170,16 @@
     <p>Emuladores e ROMs</p>
     <small>Rubertt's Store &copy; 2023</small>
   </footer>
+
+   <div id="imageModal" class="modal">
+      <div class="modal-content">
+        <a id="modalLink" href="#">
+          <span class="close-button" onclick="closeModal()">&#10006;</span>
+          <img id="modalImage" class="modal-img" src="" alt="Imagem do Modal" />
+        </a>
+      </div>
+    </div>
+  
+  <script src="/script.js"></script>
 </body>
-<script src="/script.js"></script>
 </html>

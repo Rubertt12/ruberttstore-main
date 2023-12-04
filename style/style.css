@@ -1,5 +1,14 @@
+/* Resetando estilos padrão do navegador */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Importando fonte do Google Fonts */
 @import "https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap";
 
+/* Estilos Gerais */
 body {
   background: #6e0065;
   color: #fff;
@@ -9,6 +18,7 @@ body {
   padding-top: 60px;
 }
 
+/* Cabeçalho */
 header {
   background-color: #000000;
   padding: 50px 0;
@@ -30,6 +40,7 @@ h3 {
   margin-top: 20px;
 }
 
+/* Navegação */
 ul {
   display: flex;
   justify-content: center;
@@ -64,6 +75,7 @@ ul li {
 ul li:last-child {
   margin-right: 0;
 }
+
 a {
   text-decoration: none;
   color: #fff;
@@ -75,6 +87,7 @@ a {
   font-weight: bold;
 }
 
+/* Principal */
 main {
   max-width: 800px;
   margin: 0 auto;
@@ -92,6 +105,7 @@ p {
   line-height: 1.5;
 }
 
+/* Contêiner de Jogos */
 .game-container {
   display: flex;
   justify-content: center;
@@ -100,6 +114,7 @@ p {
   margin-top: 20px;
 }
 
+/* Estilos para os Jogos */
 .game {
   flex: 1;
   max-width: 300px;
@@ -131,11 +146,11 @@ p {
   font-weight: bold;
 }
 
+/* Rodapé */
 footer {
   background-color: #000000;
   padding: 30px 0;
   text-align: center;
-  color: #fff;
 }
 
 small {
@@ -143,6 +158,7 @@ small {
   font-weight: 300;
 }
 
+/* Formulário */
 form {
   max-width: 400px;
   margin: 0 auto;
@@ -168,19 +184,25 @@ textarea {
   height: 150px;
 }
 
-button {
+/* Links */
+a {
+  text-decoration: none;
+  color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
-  background: #5bc77a;
-  color: #fff;
+  background: #555;
   font-family: "Ubuntu", sans-serif;
-  font-size: 16px;
   text-transform: uppercase;
   font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.1s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
 }
 
+a:hover {
+  background: #f90;
+  color: #fff;
+}
+
+/* Contêiner de GIFs */
 .gif-container {
   display: flex;
   justify-content: center;
@@ -192,6 +214,7 @@ button {
   width: 50px;
 }
 
+/* Animação de Rotação */
 @keyframes scrollAnimation {
   0% {
     transform: translateX(100%);
@@ -201,7 +224,7 @@ button {
   }
 }
 
-/* Modal styles */
+/* Modal */
 .modal {
   display: none;
   position: fixed;
@@ -238,14 +261,14 @@ button {
 }
 
 #modalLink {
-  text-decoration: none; /* Remove a decoração padrão de link */
-  color: inherit; /* Herda a cor do texto do elemento pai */
-  cursor: pointer; /* Altera o cursor para indicar que é clicável */
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
   background: none;
 }
 
 #modalLink:hover {
-  text-decoration: underline; /* Adiciona sublinhado quando o link é hover */
+  text-decoration: underline;
 }
 
 .close-button {
@@ -258,8 +281,10 @@ button {
 }
 
 .close-button:hover {
-  color: #ff0000; /* Cor de destaque ao passar o mouse */
+  color: #ff0000;
 }
+
+/* Ícone do Menu */
 .menu-icon {
   display: none;
   flex-direction: column;
@@ -279,7 +304,7 @@ button {
 }
 
 .change .bar:nth-child(1) {
-  transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-5px, 6 px);
 }
 
 .change .bar:nth-child(2) {
@@ -290,6 +315,7 @@ button {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
+/* Responsividade */
 @media screen and (max-width: 700px) {
   .menu-icon {
     display: flex;
@@ -320,39 +346,7 @@ button {
   }
 }
 
-/* estilo da pagina de emulação */
-
-@import "https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap";
-
-.gif-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.gif img {
-  width: 50px;
-}
-h1 {
-  font-size: 48px;
-  color: #ffffff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  margin-bottom: 20px;
-}
-
-h3 {
-  font-weight: 400;
-  color: #ffffff;
-  margin-top: 20px;
-}
-
-p {
-  font-size: 20px;
-  margin-bottom: 30px;
-  line-height: 1.5;
-}
-
+/* Página de Emulação */
 .image-container {
   display: flex;
   flex-wrap: wrap;
@@ -385,15 +379,12 @@ p {
 .image-box:hover img {
   transform: scale(1.2);
 }
+
 .image-box span {
   font-weight: bold;
 }
 
-small {
-  opacity: 0.5;
-  font-weight: 300;
-}
-
+/* Estilos adicionais para formulário na página de emulação */
 form {
   max-width: 400px;
   margin: 0 auto;
@@ -436,6 +427,8 @@ button:hover {
   background: #f90;
   color: #fff;
 }
+
+/* Animação de rolagem para contêiner de jogos */
 .game-container {
   width: 100%;
   white-space: nowrap;
@@ -452,6 +445,7 @@ button:hover {
   max-width: 150px;
 }
 
+/* Estilos para botão de download */
 .download-button {
   border-radius: 5px;
   background-color: green;
@@ -461,13 +455,4 @@ button:hover {
   text-decoration: none;
   display: inline-block;
   margin-top: 10px;
-}
-
-@keyframes scrollAnimation {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
 }

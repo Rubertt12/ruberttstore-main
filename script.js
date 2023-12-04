@@ -1,7 +1,6 @@
 function searchImage() {
   var searchTerm = document.getElementById("searchInput").value.toLowerCase()
   var imageMap = {
-
     /*  NEO GEO */
     "fatal fury": {
       image: "./assets/fatal fury.png",
@@ -15,7 +14,6 @@ function searchImage() {
       image: "./assets/samurai shodown.png",
       link: "https://exemplo.com/link3",
     },
-
 
     /*  PS1 */
     "Crash Bandicoot": {
@@ -116,7 +114,7 @@ modal.addEventListener("click", function () {
 // Adiciona um evento de rolagem à janela
 window.addEventListener("scroll", function () {
   var navbar = document.querySelector("ul")
-  navbar.classList.toggle("scrolled", window.scrollY > 0)
+  navbar.classList.toggle("scrolled", window.scrollY > 1)
 })
 
 // Adiciona um evento de pressionar tecla
